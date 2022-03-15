@@ -24,13 +24,29 @@ public class Main {
         System.out.println();
 
         //задание 3
-        int year = 20;
+        int year = 2100;
 
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
                 System.out.println(year + " год является високосным!");
             }
          else System.out.println(year + " год не является високосным!");
 
+        // задание 4
+
+        int deliveryDistance = 90;
+        int deliveryDay = 1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + deliveryDay);}
+
+        else {
+                if (deliveryDistance >20 && deliveryDistance < 60) { deliveryDay = deliveryDay+1;
+                    System.out.println("Потребуется дней: " + deliveryDay);}
+        }
+
+         if (deliveryDistance >60 && deliveryDistance < 100) { deliveryDay = deliveryDay+2;
+            System.out.println("Потребуется дней: " + deliveryDay); }
+        }
+
 
 
 
@@ -38,5 +54,4 @@ public class Main {
 
     }
 
-    }
 
